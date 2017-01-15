@@ -1,0 +1,119 @@
+body {
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size:14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width:100%;
+    height:100%;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    /*font-size: 1rem;*/
+    background:#181816;
+    position:relative;
+}
+.timg{
+    width:2.5rem;
+    height:2.5rem;
+    background:red;
+    position:absolute;
+    top:20%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+    background:url(../img/logo.png) no-repeat;
+    background-size:contain;
+}
+.text1{
+    font-size:0.6rem;
+    font-family:"Helvetica Neue LT PRO" ;
+    position:absolute;
+    top:45%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+    color:#E5BD13;
+}
+.text2{
+    font-size:0.48rem;
+    font-family:" sans-serif";
+    position:absolute;
+    top:55%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+    color:#E5BD13;
+}
+.slide2{
+    background:#060606;
+}
+.text3{
+    font-size:0.48rem;
+    font-family:"苹方";
+    color:#fff;
+    font-weight:normal;
+    position:absolute;
+    top:10%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+}
+.bg2{
+    width:5rem;
+    height:4.4rem;
+    position:absolute;
+    top:35%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+    background:url(../img/bg2.png) no-repeat;
+    background-size:contain;
+}
+.yf{
+    width:0.5rem;
+    height:0.5rem;
+    position:absolute;
+    top:35%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+    background:url(../img/yf.png) no-repeat;
+    background-size:contain;
+}
+.slide3{
+    background:#060606;
+}
+.bg3{
+    width:4.5rem;
+    height:2.8rem;
+    background:url(../img/bg3.png) no-repeat;
+    background-size:contain;
+    position:absolute;
+    top:15%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+}
+.bg4{
+    width: 3.6rem;
+    height: 0.8rem;
+    background: url(../img/bg4.png) no-repeat;
+    background-size:contain;
+    position: absolute;
+    top:35%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+}
+.btn{
+    width:4rem;
+    height:1rem;
+    background:#fff;
+    border-radius:0.5rem;
+    text-align:center;
+    line-height:1rem;
+    position:absolute;
+    top:65%;
+    left:0;right:0;bottom:0;
+    margin:0 auto;
+    font-family:" Helvetica";
+}

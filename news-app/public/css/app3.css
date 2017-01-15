@@ -1,0 +1,357 @@
+.back{
+    width:0.6rem;
+    height:0.6rem;
+    position:absolute;
+    left:0.15rem;top:0.1rem;
+}
+.back a{
+    display:block;
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../img/back.png);
+    background-size:contain;
+}
+.tit{
+    width:1.5rem;
+    height:0.8rem;
+    /*background:blue;*/
+    position:absolute;
+    left:40%;
+    color:#fff;
+    text-align:center;
+    line-height:0.8rem;
+    font-size:0.35rem;
+}
+.search{
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../img/sousuo.png);
+    background-size:contain;
+    position:absolute;
+    right:0.15rem;top:0.1rem;
+}
+.content{
+    width:100%;
+    /*background:orangered;*/
+    position:absolute;
+    top:0.8rem;
+}
+.title{
+    width:100%;
+    height:1.5rem;
+    /*background:green;*/
+}
+.title p{
+    font-size:0.35rem;
+    font-weight:bold;
+    /*line-height:1rem;*/
+    text-align:center;
+}
+.title span{
+    display:block;
+    font-size:0.35rem;
+    text-align:center;
+}
+.banner{
+    width:100%;
+    height:3rem;
+    /*background:yellow;*/
+}
+.banner img{
+    display: block;
+    width:7.5rem;
+    height:3rem;
+}
+.text{
+    width:95%;
+    /*background:pink;*/
+    margin:0 auto;
+    margin-top:0.1rem;
+}
+.text p{
+    font-size:0.3rem;
+    text-indent:0.7rem;
+    line-height:0.4rem;
+}
+.errors{
+    width:100%;
+    height:0.6rem;
+    /*background:yellow;*/
+    display:flex;
+    margin-top:0.5rem;
+}
+.errors span{
+    display:block;
+    width:2rem;
+    height:0.6rem;
+    /*background:gray;*/
+    font-size:0.3rem;
+    line-height:0.6rem;
+    text-align:center;
+}
+.errors span:nth-child(1){
+    background: #ddd;
+    border-radius:0.4rem;
+}
+.errors span:nth-child(2){
+    margin-left:3rem;
+}
+.share{
+    width:100%;
+    height:1.6rem;
+    text-align:center;
+    position:relative;
+    padding-top: 0.3rem;
+    padding-bottom:0.4rem;
+    /*background:red;*/
+}
+.share-tit{
+    width:100%;
+    font-size: 0.3rem;
+    font-weight:bold;
+}
+.share-con:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.share-con{
+    margin-top: 0.24rem;
+    text-align: center;
+}
+.share-con li{
+    float: left;
+    width:25%;
+    text-align: center;
+}
+.share-con li a{
+    color:#9c9c9c;
+    text-align: center;
+}
+.share-con li a img{
+    width:0.7rem;
+    height:0.7rem;
+    display: block;
+    margin: 0 auto;
+}
+.share-con li a span{
+    display: inline-block;
+    margin-top: 0.15rem;
+    font-size: 0.26rem;
+}
+.tuijian{
+    width:100%;
+    position:relative;
+    /*background:yellow;*/
+    text-align:center;
+    padding-top: 1rem;
+    padding-bottom:0.4rem;
+}
+.tuijian-tit{
+    width:100%;
+    font-size: 0.3rem;
+    font-weight:bold;
+
+}
+.tuijian ul li{
+    width:90%;
+    height:2rem;
+    /*background:green;*/
+    margin:0 auto;
+    border-bottom:0.03rem solid#ccc;
+}
+.tuijian ul li:nth-child(1){
+    margin-top:0.2rem;
+}
+.tuijian ul li a{
+    width:100%;
+    height:1.8rem;
+    display:flex;
+    text-decoration:none;
+}
+.tj-left{
+    width:2rem;
+    height:1.6rem;
+    /*background:yellow;*/
+    margin-left:0.3rem;
+    margin-top:0.1rem;
+}
+.tj-left img{
+    display: block;
+    width:2rem;
+    height:1.6rem;
+}
+.tj-right{
+    width:5rem;
+    height:1.8rem;
+    /*background:gray;*/
+    margin-top:0.1rem;
+    font-size:0.35rem;
+    color:#000;
+    line-height:0.6rem;
+}
+.comment{
+    width:100%;
+    text-align:center;
+    position:relative;
+    padding-top: 0.3rem;
+    padding-bottom:0.4rem;
+    /*background:red;*/
+}
+.com-tit{
+    width:100%;
+    font-size: 0.3rem;
+    font-weight:bold;
+}
+.liuyan{
+    display: none;
+    width:100%;
+    height:200px;
+    position: relative;
+    overflow: hidden;
+    /*margin-top: 0.3rem;*/
+}
+.more{
+    display: block;
+    font-size: 0.3rem;
+    margin-top: 0.2rem;
+    float: left;
+}
+textarea{
+    width: 80%;
+    height: 2.6rem;
+    position: absolute;
+    top: 0.2rem;
+    left: 0;
+}
+.liuyanBtn{
+    float: right;
+    margin-top: 0.15rem;
+    margin-left: 5rem;
+}
+.submit-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.quxiao-btn{
+    position: absolute;
+    bottom: 0;
+    left: 1.6rem;
+}
+.liuyan-xs{
+    width:7rem;
+}
+.liuyan-xs li{
+    width:100%;
+    height: 1rem;
+    /*line-height: 0.88rem;*/
+    border-bottom: 0.01rem solid #ccc;
+}
+
+/*错误提示*/
+h4{
+    color: red;
+}
+.notice{
+    display: none;
+    width:50%;
+    height: 2.5rem;
+    border: 1px solid red;
+    border-radius:15px;
+    position: fixed;
+    top:0;bottom:0;left:0; right:0;
+    margin:auto;
+    background: pink;
+    text-align: center;
+}
+.notice h2{
+    margin: 0.5rem 0;
+}
+.notice a{
+    font-size: 0.3rem;
+    color: #000;
+}
+.tishi{
+    display: none;
+    width:50%;
+    height: 1.35rem;
+    /*border: 1px solid red;*/
+    position: fixed;
+    top:0; bottom:0; left:0; right:0;
+    margin:auto;
+    background: pink;
+    text-align: center;
+}
+.error{
+    width:50%;
+    /*height: 1.35rem;*/
+    text-align: center;
+    position: fixed;
+    left:0;
+    right:0;
+    margin:0 auto;
+    top: 3.6rem;
+    /*background: red;*/
+}
+.error-box{
+    width:100%;
+    height:100%;
+    background: #F8EFF0;
+}
+.zupl{
+    text-align: center;
+}
+.footer{
+    width:100%;
+    height:0.8rem;
+    background:#fff;
+    position:fixed;
+    bottom:0;
+}
+.footer span{
+    font-size:0.35rem;
+    color:#000;
+    line-height:0.8rem;
+    margin-left:0.2rem;
+}
+.footer input[name="comment"]{
+    width:5rem;
+    height:0.5rem;
+    margin-top:-0.1rem;
+}
+.footer input[name="send"]{
+    width:1rem;
+    height:0.4rem;
+    font-size:0.3rem;
+    text-align:center;
+    line-height:0.4rem;
+    margin-top:0.2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

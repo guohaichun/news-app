@@ -1,0 +1,277 @@
+.menu{
+    width:1.2rem;
+    height:0.6rem;
+    position:absolute;
+    left:0.15rem;top:0.15rem;
+    background:url(../img/menu.png) no-repeat;
+    background-size:cover;
+
+}
+.tit{
+    width:1.6rem;
+    height:0.8rem;
+    /*background:#000;*/
+    position:absolute;
+    left:40%;
+    color:black;
+    text-align:center;
+    line-height:0.8rem;
+    font-size:0.4rem;
+}
+.huiyuan{
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../img/huiyuan.png) no-repeat;
+    background-size:contain;
+    position:absolute;
+    right:0.15rem;top:0.1rem;
+}
+.content{
+    width:100%;
+    height:12rem;
+    /*background:yellow;*/
+    position:absolute;
+    top:0.8rem;
+}
+.nav{
+    width:100%;
+    height:1rem;
+    background:#eeeef3;
+}
+.nav ul{
+    width:100%;
+    height:100%;
+    display:-webkit-box;
+    display:flex;
+}
+.nav ul li{
+    width:25%;
+    height:100%;
+    text-align:center;
+    justify-content:space-between;
+    /*-webkit-box-pack:justify;*/
+}
+.nav a{
+    font-size:0.35rem;
+    color:black;
+    line-height:1rem;
+    /*padding:0 0.2rem;*/
+}
+.nav .active{
+    color:red;
+}
+.banner img{
+    width:100%;
+    height:3rem;
+}
+.banner .mask{
+    width:100%;
+    height:0.5rem;
+    position:absolute;
+    bottom:0;left:0;
+    background:rgba(255,255,255,0.4);
+    font-size:0.3rem;
+    color:#000;
+    line-height:0.5rem;
+    text-align:center;
+}
+.con-list{
+    width:95%;
+    /*background:plum;*/
+    margin:0 auto;
+    padding-top:0.5rem;
+}
+.mui-slider{
+    height:4rem;
+}
+.newest{
+    width:100%;
+    /*height:1.6rem;*/
+    position:relative;
+}
+.newest span{
+    width:100%;
+    font-size: 0.35rem;
+    font-weight:bold;
+}
+.newest ul li{
+    width:100%;
+    height:2rem;
+    /*background:green;*/
+    margin:0 auto;
+    border-bottom:0.03rem solid#ccc;
+}
+. ul li:nth-child(1){
+    margin-top:0.2rem;
+}
+.newest ul li a{
+    width:100%;
+    height:1.8rem;
+    display:flex;
+    text-decoration:none;
+}
+.news-left{
+    width:2rem;
+    height:1.6rem;
+    /*background:yellow;*/
+    margin-top:0.1rem;
+}
+.news-left img{
+    display: block;
+    width:2rem;
+    height:1.6rem;
+}
+.news-right{
+    width:5rem;
+    height:1.8rem;
+    /*background:gray;*/
+    margin-top:0.1rem;
+    font-size:0.35rem;
+    color:#000;
+    line-height:0.6rem;
+}
+.newest2{
+    width:100%;
+    position:relative;
+    padding-top:0.3rem;
+    padding-bottom:1.2rem;
+}
+.newest2 span{
+    width:100%;
+    font-size: 0.35rem;
+    font-weight:bold;
+}
+.newest2 ul{
+    width:100%;
+    display:flex;
+}
+.newest2 ul li{
+    width:2rem;
+    height:2rem;
+    background:green;
+    border-bottom:0.03rem solid#ccc;
+    margin-right:0.5rem;
+}
+.newest2 img{
+    display: block;
+    width:2.2rem;
+    height:2rem;
+}
+
+/*侧滑页*/
+.smask{
+    width: 100%;
+    height: 100%;
+    background: #000;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    z-index: 100;
+    opacity: 0;
+    transition: left 1s linear,opacity 1s linear;
+}
+.snav{
+    width: 80%;
+    height:100%;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: -80%;
+    z-index: 101;
+    transition: left 1s linear;
+}
+.xw-top{
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 0.56rem;
+    background: #ccc;
+    position: absolute;
+    left:0; right:0;
+    margin:0 auto;
+    top: 1rem;
+    border-radius: 50%;
+}
+.xw-top img{
+    width: 100%;
+    height:100%;
+    border-radius: 50%;
+}
+.xw-line{
+    width: 100%;
+    margin-top: 4.8rem;
+}
+.xw-line li{
+    width: 88%;
+    height: 44px;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.3rem;
+    line-height: 44px;
+    margin-left: 20px;
+}
+.snav span{
+    width: 0.8rem;
+    font-size: 0.3rem;
+    position: absolute;
+    left:0;
+    right:0;
+    margin:0 auto;
+    top: 3.2rem;
+}
+.dl{
+    width: 3rem;
+    height: 5rem;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+}
+.regBtn,.loginBtn{
+    display: block;
+    width: 1.3rem;
+    height:0.7rem;
+    background:blue;
+    font-size: 0.33rem;
+    text-align: center;
+    line-height: 0.7rem;
+    float: left;
+    border-radius: 3px;
+    color: #fff;
+}
+.loginBtn{
+    float: right;
+}
+.dl-back{
+    display: block;
+    width: 2rem;
+    height:0.8rem;
+    background: red;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 1.4rem;
+    border-radius: 3px;
+    line-height: 0.8rem;
+    font-size: 0.38rem;
+    text-align: center;
+    color: #fff;
+}
+.cool{
+    width: 3.2rem;
+    position: absolute;
+    left: 0; right: 0;
+    margin: 0 auto;
+    font-size: 0.38rem;
+    top: 3.7rem;
+}
+
+
+
+
+
+
+
+
+
+

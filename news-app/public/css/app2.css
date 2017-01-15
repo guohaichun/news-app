@@ -1,0 +1,92 @@
+.search{
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../img/sousuo.png);
+    background-size:contain;
+    position:absolute;
+    right:0.15rem;top:0.1rem;
+}
+.back{
+    width:0.6rem;
+    height:0.6rem;
+    position:absolute;
+    left:0.15rem;top:0.1rem;
+}
+.back a{
+    display:block;
+    width:0.6rem;
+    height:0.6rem;
+    background:url(../img/back.png);
+    background-size:contain;
+}
+.tit{
+    width:1.8rem;
+    height:0.8rem;
+    /*background:blue;*/
+    position:absolute;
+    left:40%;
+    color:#fff;
+    text-align:center;
+    line-height:0.8rem;
+    font-size:0.35rem;
+}
+.contents{
+    width:100%;
+    /*background:yellow;*/
+    position:absolute;
+    top:0.8rem;
+}
+.content{
+    width:100%;
+    /*height:15rem;*/
+    /*background:pink;*/
+    margin:0 auto;
+    position:relative;
+    display:flex;
+    padding-top:0.2rem;
+    padding-bottom:1rem;
+}
+.left{
+    width:3.75rem;
+    /*background:red;*/
+}
+.right{
+    width:3.75rem;
+    /*background:blue;*/
+}
+.left ul li,.right ul li{
+    width:100%;
+    height:3rem;
+    border-bottom:0.05rem solid#ddd;
+    /*background:green;*/
+    position:relative;
+}
+
+.left img,.right img{
+    width:100%;
+    height:3rem;
+}
+.mask{
+    width:100%;
+    height:0.8rem;
+    background:rgba(255,255,255,0.6);
+    position:absolute;
+    bottom:0;left:0;
+    z-index:5;
+    font-size:0.25rem;
+    color:#000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

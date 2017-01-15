@@ -1,0 +1,140 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h1><%=shows[0].atitle%></h1>-->
+<!--<img src="/img/<%=shows[0].aimg%>" alt="">-->
+<!--<p>-->
+    <!--<%=shows[0].acon%>-->
+<!--</p>-->
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>内容页</title>
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/app3.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/reply.js"></script>
+</head>
+<body>
+<header>
+    <div class="back"><a href="/"></a></div>
+    <div class="tit">新闻详情</div>
+    <div class="search"></div>
+</header>
+
+<div class="content">
+    <%include header.html%>
+    <div class="title">
+        <p><%=shows[0].atitle%></p>
+        <span>凤凰网娱乐讯</span>
+    </div>
+    <div class="banner"><img src="/static/img/<%=shows[0].aimg.split(';')[0]%>" alt=""></div>
+    <div class="text">
+        <p><%=shows[0].acon%></p>
+        <div class="errors">
+            <span>我要投诉</span>
+            <span>阅读量1230</span>
+        </div>
+    </div>
+    <div class="share">
+        <span class="share-tit">分享</span>
+        <ul class="share-con">
+            <li>
+                <a href="">
+                    <img src="/static/img/wxhy.png" alt="">
+                    <span>微信好友</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/static/img/pyq.png" alt="">
+                    <span>微信朋友圈</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/static/img/qq.png" alt="">
+                    <span>QQ好友</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="/static/img/more.png" alt="">
+                    <span>更多</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="tuijian">
+        <span class="tuijian-tit">推荐阅读</span>
+        <ul>
+            <li>
+                <a href="">
+                    <div class="tj-left"><img src="/static/img/tj1.jpg" alt=""></div>
+                    <div class="tj-right"><p>小米粒被妈妈伊能静抱在怀里，这笑容太治愈了</p></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="tj-left"><img src="/static/img/tj2.jpg" alt=""></div>
+                    <div class="tj-right"><p>刘雯维密秀后变身吃货 网友：终于可以吃肉啦！</p></div>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <div class="tj-left"><img src="/static/img/tj3.jpg" alt=""></div>
+                    <div class="tj-right"><p>黄子韬恐高被部队治好 还逆袭成神枪手</p></div>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div class="comment">
+        <span class="com-tit">热门评论</span>
+        <ul class="liuyan-xs">
+            <%for (var i=0;i<liuyan.length;i++){%>
+            <li>
+                <h4><%=liuyan[i].con%></h4>
+                留言人：<span><%=liuyan[i].username%></span>&nbsp&nbsp时间：<span><%=liuyan[i].time%></span>
+            </li>
+            <%}%>
+        </ul>
+        <a class="more" href="/reply/more/<%=aid%>">更多</a>
+        <button type="button" class="btn btn-primary liuyanBtn">评论</button>
+        <div class="liuyan">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <button type="button" class="btn btn-primary submit-btn" attr="<%=name%>">提交</button>
+            <button type="button" class="btn btn-primary quxiao-btn">取消</button>
+        </div>
+        <div class="notice">
+            <h2>还没有登录</h2>
+            <a href="/user/login">登录</a>&nbsp;&nbsp;
+            <a href="javascript:;" class="back">返回</a>
+        </div>
+        <div class="tishi">
+            <h2>添加成功</h2>
+        </div>
+</div>
+
+<!--<div class="footer">-->
+    <!--<span>评论:</span>-->
+    <!--<input type="text" name="comment">-->
+    <!--<input type="submit" value="发送" name="send">-->
+<!--</div>-->
+
+
+
+
+
+</body>
+</html>

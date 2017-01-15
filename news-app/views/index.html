@@ -1,0 +1,216 @@
+<!--<!doctype html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+    <!--<meta charset="UTF-8">-->
+    <!--<title>Document</title>-->
+<!--</head>-->
+<!--<body>-->
+<!--<ul>-->
+    <!--<%for(var i=0;i<categorys.length;i++){%>-->
+       <!--<li><a href="/list/<%=categorys[i].cid%>"><%=categorys[i].cname%></a></li>-->
+    <!--<%}%>-->
+<!--</ul>-->
+<!--</body>-->
+<!--</html>-->
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>首页</title>
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/app1.css">
+    <link href="/static/css/mui.min.css" rel="stylesheet"/>
+    <script src="/static/js/mui.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/app.js"></script>
+    <script>
+        $(function(){
+            var mySwiper = new Swiper ('.swiper-container',
+                    {pagination: '.swiper-pagination'}
+            );
+            //    侧滑
+            var flag1=true;
+            $(".huiyuan").click(function(){
+                $(".smask").css({left:0,opacity:0.6});
+                $(".snav").css({left:0});
+//                if(flag1){
+//                    $.ajax({
+//                        url:"/express",
+//                        type:"post",
+//                        data:{url:"http://www.expressjs.com.cn/"},
+//                        success:function(e){
+//                            e=e.split("|");
+//                            for(var i=0;i<e.length;i++){
+//                                $(`<li>${e[i]}</li>`).appendTo(".xw-line");
+//                            }
+//                        }
+//                    });
+//                    flag1=false;
+//                }
+            });
+            $(".smask").click(function(){
+                $(".smask").css({left:"-100%",opacity:0});
+                $(".snav").css({left:"-80%"});
+            });
+
+        });
+
+
+    </script>
+</head>
+<body>
+<!--侧边栏-->
+<div class="smask"></div>
+<div class="snav" >
+    <%if(!login){%>
+      <div class="xw-top"></div>
+      <span></span>
+    <%}else{%>
+    <div class="xw-top">
+        <img src="/static/img/toux.jpg" alt="">
+    </div>
+    <%}%>
+    <div class="cool">澎友，一起看新鲜</div>
+    <ul class="xw-line">
+        <li>我的订阅</li>
+        <li>我的收藏</li>
+        <li>我的备忘</li>
+        <li>我的日志</li>
+        <li>设置</li>
+    </ul>
+    <%if(!login){%>
+     <div class="dl">
+         <a href="/user/reg" class="regBtn">注册</a>
+         <a href="/user/login" class="loginBtn">登录</a>
+     </div>
+     <%}else{%>
+    <a href="/user/logout" class="dl-back">退出登录</a>
+    <%}%>
+</div>
+<header>
+    <div class="menu"></div>
+    <div class="tit"></div>
+    <div class="huiyuan"></div>
+</header>
+<div class="content">
+    <div class="nav">
+        <ul>
+            <%for(var i=0;i<categorys.length;i++){%>
+              <li><a href="/list/<%=categorys[i].cid%>"><%=categorys[i].cname%></a></li>
+              <%}%>
+        </ul>
+    </div>
+    <div class="mui-content">
+        <div class="mui-slider">
+            <div class="mui-slider-group">
+                <div class="mui-slider-item"><a href="#"><img src="/static/img/1.jpg" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="/static/img/2.jpg" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="/static/img/3.jpg" /></a></div>
+                <div class="mui-slider-item"><a href="#"><img src="/static/img/4.jpg" /></a></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+    <ul class="mui-table-view">
+       <li class="mui-table-view-cell mui-media">
+            <a href="app3.html">
+                <img class="mui-media-object mui-pull-left" src="/static/img/1.jpg">
+                <div class="mui-media-body">
+                    中国政库
+                    <p class='mui-ellipsis'>规模结构和力量编成改革是习近平描绘军队力量结构全景</p>
+                </div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media">
+            <a href="app3.html">
+                <img class="mui-media-object mui-pull-left" src="/static/img/2.jpg">
+                <div class="mui-media-body">
+                    中南海
+                    <p class='mui-ellipsis'>逝世一年多后，全国人大常委原委员长万里与夫人合葬八宝山</p>
+                </div>
+            </a>
+        </li>
+        <li class="mui-table-view-cell mui-media">
+            <a href="app3.html">
+                <img class="mui-media-object mui-pull-left" src="/static/img/3.jpg">
+                <div class="mui-media-body">
+                    中南海
+                    <p class='mui-ellipsis'>国际研究称青蒿素或可治糖尿病，屠呦呦团队称暂无跟进计划</p>
+                </div>
+            </a>
+        </li>
+    </ul>
+
+    <div class="con-list">
+        <div class="newest">
+            <span>今日新闻</span>
+            <ul>
+                <li>
+                    <a href="app3.html">
+                        <div class="news-left"><img src="/static/img/tj1.jpg" alt=""></div>
+                        <div class="news-right"><p style="color:black;">来看图！上海2017年政府工作报告亮点在这里</p></div>
+                        <div class="news-xx">
+                            <span style="position: absolute;bottom:4.1rem;left:2.5rem;font-size:12px; color:#999;">浦江头条</span>
+                            <span  style="position: absolute;bottom:4.1rem;left:5rem;font-size:12px; color:#ccc">三小时前</span>
+                            <img style="width:0.6rem; height:0.2rem; position: absolute;bottom:4.18rem;left:6.3rem;font-size:12px;" src="/static/img/zt.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app3.html">
+                        <div class="news-left"><img src="/static/img/tj2.jpg" alt=""></div>
+                        <div class="news-right"><p style="color:black;">王健林：退出地产开发因为调控太多，从业28年被调了十来次</p></div>
+                        <div class="news-xx">
+                            <span style="position: absolute;bottom:2.1rem;left:2.5rem;font-size:12px; color:#999;">地产界</span>
+                            <span  style="position: absolute;bottom:2.1rem;left:5rem;font-size:12px; color:#ccc">四小时前</span>
+                            <img style="width:0.6rem; height:0.2rem; position: absolute;bottom:2.18rem;left:6.3rem;font-size:12px;" src="/static/img/zt.png" alt="">
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app3.html">
+                        <div class="news-left"><img src="/static/img/tj3.jpg" alt=""></div>
+                        <div class="news-right"><p style="color:black;">郑州残障乞讨少年公交车上抓小偷，执着提醒感动乘客</p></div>
+                        <div class="news-xx">
+                            <span style="position: absolute;bottom:.1rem;left:2.5rem;font-size:12px; color:#999;">@所有人</span>
+                            <span  style="position: absolute;bottom:.1rem;left:5rem;font-size:12px; color:#ccc">五小时前</span>
+                            <img style="width:0.6rem; height:0.2rem; position: absolute;bottom:.18rem;left:6.3rem;font-size:12px;" src="/static/img/zt.png" alt="">
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="newest2">
+            <span>热搜新闻</span>
+            <ul>
+                <li><a href=""><img src="/static/img/tj1.jpg" alt=""></a></li>
+                <li><a href=""><img src="/static/img/tj2.jpg" alt=""></a></li>
+                <li><a href=""><img src="/static/img/tj3.jpg" alt=""></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--footer-->
+<div class="footer">
+    <div class="foot foot1">
+        <a href="">首页</a>
+    </div>
+    <div class="foot foot2">
+        <a href="">论坛</a>
+    </div>
+    <div class="foot foot3">
+        <a href="">关注</a>
+    </div>
+    <div class="foot foot4">
+        <a href="">我的</a>
+    </div>
+</div>
+<div style="clear: both;"></div>
+
+</body>
+</html>

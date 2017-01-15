@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link rel="stylesheet" href="/static/css/animate.min.css">
+    <link rel="stylesheet" href="/static/css/swiper.min.css">
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/login.css">
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/zepto.min.js"></script>
+    <script src="/static/js/swiper.min.js"></script>
+    <script src="/static/js/swiper.animate1.0.2.min.js"></script>
+    <script src="/static/js/index.js"></script>
+    <title>注册页</title>
+</head>
+<body>
+<div class="bg">
+    <div class="mask">
+        <div class="welcome"><h1>Welcome</h1></div>
+        <form action="/user/regCheck" method="post">
+          <div class="user">
+            <img src="/static/img/about.png" alt="">
+            <input type="text" name="username" value="请输入用户名">
+          </div>
+          <div class="pass">
+            <img src="/static/img/pass.png" alt="">
+            <input type="password" name="password" value="123456">
+          </div>
+          <div class="loginbox"><input type="submit" value="注册"></div>
+          <div class="foot">
+            <a href="" class="forget">忘记密码?</a>
+            <span>|</span>
+            <a href="/user/login" class="reg">登录</a>
+          </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
